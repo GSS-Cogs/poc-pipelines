@@ -19,6 +19,20 @@ PMD_CLIENT_ID=""
 PMD_CLIENT_SECRET=""
 ```
 
+The [`docker-compose.yml`](docker-compose.yaml) is taken from the [airflow documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html).
+
+To run airflow for the first time we must initialise an admin account
+
+```sh
+docker compose up airflow-init
+```
+
+After this, we can start airflow by starting all the containers.
+
+```sh 
+docker compose up
+```
+
 ## Docs
 
 - [Dissemination application profile](https://github.com/GSS-Cogs/application-profile)
